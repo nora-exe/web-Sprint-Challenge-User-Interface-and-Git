@@ -74,7 +74,6 @@ p {
 header {
     width: 100%;
     background:black; 
-    border-top:1px solid black;
     margin-bottom:2%;
 }
 
@@ -86,7 +85,7 @@ header img #logo {
 header nav {
     background-color: white;
     width: 100%;
-    margin: 5% 0% 0% 0%;
+    margin: 0% 0% 0% 0%;
     padding: 2% 15% 4% 10%;
     display: flex;
     justify-content: space-between;
@@ -105,100 +104,43 @@ header #banner {
     padding-left: 10%;
 }
 
-.top-content {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    margin-bottom: 20px;
-    border-bottom: 1px dashed black;
+h2 {
+    font-weight: bold;
 }
 
-.top-content .text-container {
-    width: 48%;
-    padding: 0 1%;
-    padding-bottom: 20px;  
+hr {
+    border-top:medium dotted black;
 }
 
-.middle-content {
-    margin-bottom: 20px;
-    border-bottom: 1px dashed black;
+.boxRow {
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
 
-.middle-content h2 {
-    padding: 0 2%;
-    margin-bottom: 0;
+.boxRow hr {
+    width:90%;
+    margin-left: 0;
 }
 
-.middle-content .boxes {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
+.boxRow p, .boxRow h2 {
+    padding: 2%;
 }
 
-.middle-content .boxes .box {
-    width: 12.5%;
-    height: 100px;
-    /* background:black; */
-    margin: 20px 2.5%;
-    color: white;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.boxRow p {
+    padding-bottom: 5%;
 }
 
-.middle-content .boxes .box:first-child {
-    background:teal;
+button {
+    color: black;
+    background:white;
+    padding:2% 5% 2% 5%;
+    border: .2em solid;
+    border-radius:1em;
 }
 
-.middle-content .boxes .box:nth-child(2) {
-    background:gold;
-}
-
-.middle-content .boxes .box:nth-child(3) {
-    background:cadetblue;
-}
-
-.middle-content .boxes .box:nth-child(4) {
-    background:coral;
-}
-
-.middle-content .boxes .box:nth-child(5) {
-    background:crimson;
-}
-
-.middle-content .boxes .box:nth-child(6) {
-    background:forestgreen;
-}
-
-.middle-content .boxes .box:nth-child(7) {
-    background:darkorchid;
-}
-
-.middle-content .boxes .box:nth-child(8) {
-    background:hotpink;
-}
-
-.middle-content .boxes .box:nth-child(9) {
-    background:indigo;
-}
-
-.middle-content .boxes .box:last-child {
-    background:dodgerblue;
-}
-
-
-.bottom-content {
-    display: flex;
-    margin: 0 2% 20px;
-    justify-content: space-around;
-}
-
-.bottom-content .text-container {
-    padding-right: 4%;
-}
-
-.bottom-content .text-container:last-child {
-    padding-right: 0;
+.workTogether {
+    padding: 5%;
 }
 
 footer {
@@ -219,3 +161,4 @@ footer nav a {
     color: white;
     text-decoration: none;
 }
+
